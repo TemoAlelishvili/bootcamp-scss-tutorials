@@ -1,55 +1,17 @@
 .bg-color {
-
-    &-1 {
-        background-color: $color-1;
+    @each $ind, $color in $palette {
+        &-#{$ind}{
+            background-color: color(1);
+        }
     }
     
-    &-2 {
-        background-color: $color-2;
-    }
-
-    &-3 {
-        background-color: $color-3;
-    }
-
-    &-4 {
-        background-color: $color-4;
-    }
-
-    &-5 {
-        background-color: $color-5;
-    }
-
-    &-6 {
-        background-color: $color-6;
-    }
-
-    &-7 {
-        background-color: $color-7;
-    }
-
-    &-8 {
-        background-color: $color-8;
-    }
-
-    &-9 {
-        background-color: $color-9;
-    }
-
-    &-10 {
-        background-color: $color-10;
-    }
-
-    &-11 {
-        background-color: $color-11;
-    }
 }
 @import 'size';
 
 .btn {
     border: none;
-    background-color: $color-1;
-    color: $color-2;
+    background-color: color(1);
+    color: color(2);
     font-family: 'Lato', sans-serif;
     font-weight: 900;
     text-decoration: none;
@@ -89,52 +51,52 @@
     &.bg-color {
 
         &-1 {
-            background-color: $color-1;
+            background-color: color(1);
         }
 
         &-2 {
-            background-color: $color-2;
+            background-color: color(2);
         }
 
         &-3 {
-            background-color: $color-3;
+            background-color: color(3);
         }
 
         &-4 {
-            background-color: $color-4;
+            background-color: color(4);
         }
 
         &-5 {
-            background-color: $color-5;
+            background-color: color(5);
         }
 
         &-6 {
-            background-color: $color-6;
+            background-color: color(6);
         }
 
         &-7 {
-            background-color: $color-7;
+            background-color: color(7);
         }
 
         &-8 {
-            background-color: $color-8;
+            background-color: color(8);
         }
 
         &-9 {
-            background-color: $color-9;
+            background-color: color(9);
         }
 
         &-10 {
-            background-color: $color-10;
+            background-color: color(10);
         }
 
         &-11 {
-            background-color: $color-11;
+            background-color: color(11);
         }
     }
 
     &:hover {
-        background-color: $color-3;
+        background-color: color(3);
     }
 }
 
